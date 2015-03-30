@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.sl.chatPages.util.Files" table="files">
+
+		<id name="id" column="id" type="integer">
+			<generator class="native"></generator>
+		</id>
+		<property name="name" column="name" type="string"></property>
+		<property name="storeName" column="storeName" type="string"></property>
+		<property name="upUser" column="upUser" type="string"></property>
+		<property name="year" column="year" type="string"></property>
+		<property name="createTime" column="createTime" type="string"></property>
+		<property name="cId" column="cId" type="integer"></property>
+		<property name="depId" column="depId" type="integer"></property>
+		<property name="type" column="type" type="string"></property>
+		<property name="hasObject" column="hasObject" type="character"></property>
+		<property name="inStorage" column="inStorage" type="character"></property>
+		<property name="oName" column="oName" type="string"></property>
+		<property name="oType" column="oType" type="integer"></property>
+		<property name="oDetailType" column="oDetailType" type="integer"></property>
+		<property name="oDescription" column="oDescription" type="string"></property>
+		<property name="oAddress" column="oAddress" type="string"></property>
+		<property name="oUser" column="oUser" type="string"></property>
+		<property name="dr" column="dr" type="integer"></property>
+	</class>
+</hibernate-mapping>

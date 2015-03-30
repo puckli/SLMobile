@@ -1,0 +1,103 @@
+body {
+	margin-top:22px;
+	font-size: 10px;
+	width: 100%;
+}
+section{
+	margin:0px auto;
+}
+
+/**
+width:  iphone5:568  nokia925:480
+*/
+@media screen and (max-width: 2220px) {
+	body {
+		min-width: 768px;
+	}
+	section{
+		width:90%;
+		margin:0 auto;
+	}
+	header,footer{
+		width:90%;
+		margin:0 auto;
+		font-size: 2.6em;
+	}
+	section table th {
+		font-size: 2em;
+	}
+	.img{width:26px;}
+}
+
+@media screen and (max-width: 568px) {
+	body {
+		min-width:480px;
+		max-width:550px;
+	}
+	section{
+		width:98%;
+	}
+	header,footer{
+		width:96%;
+		margin:0 auto;
+		font-size: 2em;
+	}
+	section table{
+		font-size: 1.4em;
+	}
+	.img{width:24px;}
+}
+
+@media screen and (max-width: 320px) {
+	body {
+		min-width:480px;
+	}
+	section{
+		width:98%;
+	}
+	header,footer{
+		width:96%;
+		margin:0 auto;
+		font-size: 1.6em;
+	}
+	section table{
+		font-size: 1.2em;
+	}
+	.img{width:24px;}
+}
+
+.table{
+	border-collapse:collapse;	
+	margin: 0 auto;
+	width:100%
+}
+
+footer{
+	width:400px;
+	margin: 0 auto;
+}
+
+.center{
+	text-align:center;
+}
+.right{
+	text-align:right;
+}
+
+.opinionTable{
+	border-collapse:collapse;	
+	margin: 3px auto;
+	width:80%
+}
+.opinionTable td{
+	width:30%;
+	text-align:center;
+	font-size:0.8em;
+}
+.opinionTable td:nth-child(2){
+	width:40%;
+}
+.opinionTable thead td{
+	text-align:center;
+}
+

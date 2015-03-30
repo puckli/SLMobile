@@ -1,0 +1,106 @@
+body {
+	margin:18px auto 0px;;
+	font-size: 10px;
+	width: 100%;
+	background-color: rgba(234, 244, 244, .9);
+}
+
+header,section {
+	width: 100%;
+}
+
+/**
+width:  iphone:568  nokia925:480
+*/
+@media screen and (max-width: 2220px) {
+	body {
+		width: 1020px;
+	}
+	header,footer{
+		font-size: 2.8em;
+	}
+	section>table th {
+		font-size: 2em;
+	}
+	section>table>tbody>tr {
+		height: 2.8em;
+		font-size: 2.4em;
+	}
+}
+
+@media screen and (max-width: 568px) {
+	body {
+		min-width:480px;
+		max-width: 556px;
+	}
+	header,footer{
+		font-size: 1.6em;
+	}
+	section{
+		width:98%;
+	}
+	section>table th {
+		font-size: 1em;
+	}
+	section>table>tbody>tr {
+		height: 2em;
+		font-size: 1.4em;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	body {
+		width: 480px;
+	}
+	header,footer{
+		font-size: 1.8em;
+	}
+	section{
+		width:98%;
+	}
+	section>table th {
+		font-size: 1em;
+	}
+	section>table>tbody>tr {
+		height: 2.2em;
+		font-size: 1.4em;
+	}
+}
+
+.title {
+	display: inline-block;
+	margin: 4px 10px;
+	text-shadow: 0px 1px 0px rgba(77, 77, 77, .8);
+}
+
+/* 表格样式 */
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+table thead td,table th{text-align:center;font-size:1.4em;font-weight:bold;}
+table tbody td {
+	border: 1px black solid;
+}
+section{
+	margin:0px auto;
+}
+section>table>tbody>tr:nth-child(2n) {
+	background-color: rgb(220, 230, 240);
+}
+
+section>table>tbody>tr {
+	cursor: pointer;
+}
+
+section>table>tbody>tr:hover {
+	background-color: rgb(230, 240, 245);
+}
+
+footer {
+	margin: 5px 0 10px;
+}
+
+header {
+	margin: 5px auto 10px;
+}

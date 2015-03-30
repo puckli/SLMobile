@@ -1,0 +1,87 @@
+.button {
+	-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px
+		2px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px
+		rgba(0, 0, 0, 0.15);
+	box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px
+		rgba(0, 0, 0, 0.15);
+	background-color: #eeeeee;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fbfbfb),
+		color-stop(100%, #e1e1e1) );
+	background: -webkit-linear-gradient(top, #fbfbfb, #e1e1e1);
+	background: -moz-linear-gradient(top, #fbfbfb, #e1e1e1);
+	background: -o-linear-gradient(top, #fbfbfb, #e1e1e1);
+	background: linear-gradient(top, #fbfbfb, #e1e1e1);
+	display: -moz-inline-stack;
+	display: inline-block;
+	zoom: 1;
+	border: 1px solid #d4d4d4;
+	height: 26px;
+	line-height: 26px;
+	padding: 0px 14px;
+	font-weight: 300;
+	font-family: "Helvetica Neue Light", "Helvetica Neue", "Helvetica",
+		"Arial", "Lucida Grande", sans-serif;
+	color: #222222;
+	text-shadow: 0 1px 1px white;
+	margin: 0;
+	text-decoration: none;
+	text-align: center;
+	cursor:pointer;
+}
+
+.button:hover {
+	background-color: #eeeeee;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff),
+		color-stop(100%, #dcdcdc) );
+	background: -webkit-linear-gradient(top, #ffffff, #dcdcdc);
+	background: -moz-linear-gradient(top, #ffffff, #dcdcdc);
+	background: -o-linear-gradient(top, #ffffff, #dcdcdc);
+	background: linear-gradient(top, #ffffff, #dcdcdc);
+}
+
+.button:active {
+	-webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px
+		white;
+	-moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white;
+	box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
+	background: #eeeeee;
+	color: #bbbbbb;
+}
+
+.button:focus {
+	outline: none;
+}
+
+.button-rounded {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+
+@media screen and (max-width: 2220px) {
+	.btnimg {
+		width: 20px;
+		margin-bottom: 5px;
+		vertical-align: middle;
+	}
+}
+
+@media screen and (max-width: 568px) {
+	.btnimg {
+		width: 20px;
+		margin-bottom: 3px;
+		vertical-align: middle;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.btnimg {
+		width: 20px;
+		margin-bottom: 3px;
+		vertical-align: middle;
+	}
+}

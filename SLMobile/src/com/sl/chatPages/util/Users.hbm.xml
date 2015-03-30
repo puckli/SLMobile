@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.sl.chatPages.util.Users" table="users">
+
+		<id name="uid" type="string">
+			<column name="uid" />
+		</id>
+		<property name="name" column="name" type="string"></property>
+		<property name="password" column="password" type="string"></property>
+		<property name="lvl" column="lvl" type="integer"></property>
+		<property name="cid" column="cid" type="integer"></property>
+		<property name="depId" column="depId" type="integer"></property>
+		<property name="roleId" column="roleId" type="integer"></property>
+		<property name="dr" column="dr" type="integer"></property>
+	</class>
+</hibernate-mapping>

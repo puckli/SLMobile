@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="mydefault" extends="struts-default">
+		<global-results>
+			<result name="nullUserError">/nullUserError.jsp</result>
+			<result name="error">/errors.jsp</result>
+		</global-results>
+	</package>
+	
+	<!-- <include file="struts_pagechat.xml"></include> -->
+	<!-- <include file="struts_SLzx.xml"></include> -->
+	
+	<package name="ios" namespace="/ios" extends="struts-default">
+		<action name="*" class="iosAction" method="{1}">
+			<result name="index">/index.jsp</result>
+			<result name="index1">/index1.jsp</result>
+			<result name="unExamineSldList">/ios/unexaminesldlist.jsp</result>
+			<result name="viewAndExamine">/ios/viewAndExamine.jsp</result>
+			<result name="redirectUnExamineSldList" type="redirectAction">getUnExamineSldList.action?uid=${uid}
+			</result>
+			<result name="agreeList">/ios/agreeSldList.jsp</result>
+			<result name="disagreeList">/ios/disagreeSldList.jsp</result>
+			<result name="showSLD">/ios/showSLD.jsp</result>
+			<result name="loadImagePage">/ios/loadImagePage.jsp</result>
+			<result name="goSLDIndex">/index1-1.jsp</result>
+		</action>
+
+	</package>
+
+	<package name="application" namespace="/application" extends="struts-default">
+		<action name="pushStart" class="com.sl.ios.action.PushPollingAction"
+			method="pushStart">
+		</action>
+		<action name="reloadSetting" class="com.sl.ios.action.PushPollingAction"
+			method="reloadSetting">
+		</action>
+
+	</package>
+
+</struts>
