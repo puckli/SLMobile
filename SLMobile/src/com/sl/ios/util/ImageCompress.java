@@ -192,23 +192,6 @@ public class ImageCompress
 	public static void main(String[] arg)
 	{
 		compressImage(Setting.LARGE_IMAGE_PATH, Setting.LARGE_IMAGE_PATH, "2.jpg", "SLxxxx", true);
-//		ImageCompress mypic = new ImageCompress();
-//		File file = new File(Setting.LARGE_IMAGE_PATH);
-//		File files[] = file.listFiles();
-//		System.out.println("输入的图片大小：" + mypic.getPicSize("H:\\image1\\7.jpg") / 1024 + "KB");
-//		int count = 0; // 记录全部图片压缩所用时间
-//		for (int i = 0; i < files.length; i++)
-//		{
-//			int start = (int) System.currentTimeMillis(); // 开始时间
-//			mypic.compressPic(Setting.LARGE_IMAGE_PATH, Setting.SMALL_IMAGE_PATH, files[i], "r1" + i + ".jpg");
-//			int end = (int) System.currentTimeMillis(); // 结束时间
-//			int re = end - start; // 但图片生成处理时间
-//			count += re;
-//			System.out.println("第" + (i + 1) + "张图片压缩处理使用了: " + re + "毫秒");
-//			System.out.println("输出的图片大小：" + mypic.getPicSize("H:\\image2\\r1" + i + ".jpg") / 1024 + "KB");
-//		}
-//		System.out.println("总共用了：" + count + "毫秒");
-//		log.info("转换图片");
 	}
 	
 	/**

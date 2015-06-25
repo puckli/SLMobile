@@ -79,7 +79,6 @@ public class DESPlus {
 
     /**
      * 指定密钥构造方法
-     * 
      * @param strKey
      *            指定的密钥
      * @throws Exception
@@ -97,7 +96,6 @@ public class DESPlus {
 
     /**
      * 加密字节数组
-     * 
      * @param arrB
      *            需加密的字节数组
      * @return 加密后的字节数组
